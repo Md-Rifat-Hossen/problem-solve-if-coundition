@@ -47,3 +47,50 @@ int main()
     else
         printf("The 3rd Number is the greatest among three \n");
 }
+
+
+
+3. Eligible candidetes
+
+
+#include<stdio.h>
+int main()
+{
+
+int p,c,m,t,pm;
+printf("Eligible Criteria:\n");
+printf("Marks in math>=65\n");
+printf("and marks in Chem>=50\n");
+printf("and marks in Phy>=55\n");
+printf("Totale the three Number>=190\n");
+printf("and Total in Math and Physics>=140\n");
+
+ printf("Input the marks obtained in Physics :");
+   scanf("%d",&p);
+   printf("Input the marks obtained in Chemistry :");
+   scanf("%d",&c);
+   printf("Input the marks obtained in Mathematics :");
+   scanf("%d",&m);
+   printf("Total marks of Maths, Physics and Chemistry : %d\n",m+p+c);
+   printf("Total marks of Maths and  Physics : %d\n",m+p);
+
+
+   if(m>=65)
+    if(p>=55)
+    if(c>=50)
+    if((m+c+p)>=190 && (p+m>=140) )
+    printf("The candidetes Is Eligible\n");
+   else
+    printf("he candidetes Is not Eligible\n");
+    else
+       printf("he candidetes Is not Eligible\n");
+       else
+       printf("he candidetes Is not Eligible\n");
+else
+
+           printf("he candidetes  notIs Eligible\n");
+
+
+
+
+}
